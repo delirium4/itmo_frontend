@@ -40,13 +40,12 @@ header {
     height: max-content;
     width: 100%;
     display: flex;
-    background: #495057;
 }
 
 .logo {
     display: flex;
     width: 5%;
-    height: 10%;
+    height: 100%;
     float: left;
     left: 0;
 }
@@ -56,6 +55,7 @@ nav {
     margin-top: 1.5%;
     margin-left: auto;
     margin-right: 3%;
+    margin-bottom: 1.5%;
 }
 
 .nav_button {
@@ -67,6 +67,7 @@ nav {
     background-color: #fff;
     padding: 8px;
     text-decoration:none;
+    display: inline-flex;
 }
 .nav_button:hover {
     background-color: #1E1E1E
@@ -84,6 +85,15 @@ main {
     font-size: large;
     padding: 1%;
     word-spacing: 2px;
+    position: relative;
+    top: 50px;
+}
+
+.nav_menu{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #495057;
 }
 
 .clothing-item{
@@ -111,6 +121,8 @@ footer {
     margin-top: 1%;
     display: flex;
     float: left;
+    position: relative;
+    top: 50px;
 }
 
 .socialNetwork_logo{
@@ -142,4 +154,28 @@ footer {
     text-align: left;
     background-color: gray;
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .image{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 769px) and (max-device-width: 1920px) {
+    .image{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 1921px) {
+    .image{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .table {
+        display: none;
+    }
 }
