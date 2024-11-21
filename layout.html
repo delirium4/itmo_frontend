@@ -2,28 +2,28 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link href="CSS/style.css" rel="stylesheet">
+    <script src="JS/main.js" defer></script>
     <title>PHARAOH МЕРЧ</title>
     <meta name="description" content="сайт о современном российском исполнителе Pharaoh">
     <meta name="keywords" content="pharaoh, PHARAOH, Pharaoh, фараон, фара, музыка, треки, хип-хоп, альбом">
 </head>
 <body>
     <header>
-        <h2>
-            Логотип
-        </h2>
-        <section>
+        <div class = nav_menu>
+        <img class="logo" src="src/logo.png" alt="Logo">
             <nav>
                 <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Мерч</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#main" class ="nav_button_active">Главная</a></li>
+                    <li><a href="merc.html" class ="nav_button">Мерч</a></li>
+                    <li><a href="#contacts" class ="nav_button">Контакты</a></li>
                 </ul>
             </nav>
-        </section>
+        </div>
     </header>
 
     <main>
-        <section>
+        <section id="main">
         <h2>PHARAOH</h2>
         <h4>Бывший участник Grindhouse и YungRussia, ныне — лидер творческого объединения Dead Dynasty.</h4>
         </section>
@@ -37,6 +37,8 @@
             Новую волну популярности обретает в середине – конце 2015 года, когда в интернете активно стали обсуждаться клипы на синглы «Black Siemens» и «Champagne Squirt». До того, как клип был удалён, «Black Siemens» успевает собрать около 10 миллионов просмотров на YouTube, а главные слова из припева песни — «Скр-скр-скр» — становятся своеобразным интернет-мемом и находят определённый отклик в социальных медиа. Как объясняет вкладываемый в композицию смысл сам Pharaoh: «„Скёр“ — это звук, который издавал Брюс Ли делая приёмы».</article>
         </section>
         <br>
+
+
         <aside>
             <h1>Игра с html тэгами</h1>
             <h4>
@@ -103,7 +105,9 @@
     </main>
 
     <footer>
-        <a href="#">Наш адрес</a>
+        <div id="contacts">
+        <a href="#"><img src="src/tg_logo.png" alt="telegram" class="socialNetwork_logo"></a>
+        </div>
         <h6>@del.irium</h6>
     </footer>
 </body>
