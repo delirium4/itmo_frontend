@@ -7,7 +7,7 @@
             const stats = document.createElement('div');
             stats.style.fontSize = '12px';
             stats.style.color = 'gray';
-            stats.innerText = `Page Load Time: ${loadTime} ms`;
+            stats.innerText = `Page Load Time: ${loadTime.toPrecision(2)} ms`;
             footer.appendChild(stats);
         }
 
