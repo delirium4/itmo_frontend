@@ -207,6 +207,29 @@ footer {
     color: white;
 }
 
+#discountForm, .table_section {
+    background-color: #1E1E1E;
+    width: max-content;
+    padding: 1%;
+    color: white;
+    border-radius: 10px;
+    margin: 2%;
+    box-shadow: 7px 3px 3px gray;
+}
+
+.table_section {
+    align-content: center;
+    display: block
+}
+
+.table_section th, .table_section td {
+    align-content: center;
+    border: 1px solid gray;
+    align-self: center;
+    padding: 2%;
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 768px) {
     .clothing-item{
         width: 100px;
