@@ -2,28 +2,30 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link href="CSS/style.css" rel="stylesheet">
+    <script src="JS/main.js" defer></script>
+    <script src="JS/navActive.js" defer></script>
     <title>PHARAOH МЕРЧ</title>
     <meta name="description" content="сайт о современном российском исполнителе Pharaoh">
     <meta name="keywords" content="pharaoh, PHARAOH, Pharaoh, фараон, фара, музыка, треки, хип-хоп, альбом">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
-        <h2>
-            Логотип
-        </h2>
-        <section>
+        <div class = nav_menu>
+        <img class="logo" src="src/logo.png" alt="Logo">
             <nav>
-                <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Мерч</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
+                <a href="index.html" class ="nav_button_active">Главная</a>
+                <a href="merc.html" class ="nav_button">Мерч</a>
+                <a href="#contacts" class ="nav_button">Контакты</a>
+                <a href="discount.html" class="nav_button">Скидка</a>
             </nav>
-        </section>
+        </div>
     </header>
 
     <main>
-        <section>
+        <br>
+        <section id="main">
         <h2>PHARAOH</h2>
         <h4>Бывший участник Grindhouse и YungRussia, ныне — лидер творческого объединения Dead Dynasty.</h4>
         </section>
@@ -103,7 +105,9 @@
     </main>
 
     <footer>
-        <a href="#">Наш адрес</a>
+        <div id="contacts">
+        <a href="#"><img src="src/tg_logo.png" alt="telegram" class="socialNetwork_logo"></a>
+        </div>
         <h6>@del.irium</h6>
     </footer>
 </body>

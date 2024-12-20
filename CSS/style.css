@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+h1{
+    font-size: xx-large;
+    font-weight: bold;
+    border-radius: 10px;
+    width: max-content;
+    height: max-content;
+    padding-top: 10%;
+    margin-bottom: 1%;
+    margin-left: 0;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 10px;
+    width: max-content;
+    height: max-content;
+    padding: 5px;
+    margin: 5px 5px 10px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 7px;
+    width: max-content;
+    height: max-content;
+    padding: 5px 10px;
+    margin: 5px 5px 10px;
+}
+
+p {
+    width: 95%;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+
+
+header {
+    height: max-content;
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    width: 5%;
+    height: 100%;
+    float: left;
+    left: 0;
+}
+
+nav {
+    display: flex;
+    margin: 1.5% 3% 1.5% auto;
+
+}
+
+nav a {
+    margin-left: 10px;
+    font-family: "Roboto", sans-serif;
+    padding: 5px;
+    height: 20px;
+    width: max-content;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: right;
+}
+
+.nav_button {
+    margin-left: 10px;
+    font-family: "Roboto", sans-serif;
+    border-radius: 10px;
+    font-size: 17px;
+    color: #495057;
+    background-color: #fff;
+    width: max-content;
+    text-decoration: none;
+    text-align: right;
+}
+.nav_button:hover {
+    background-color: #1E1E1E
+}
+
+.nav_button_active {
+    margin-left: 10px;
+    font-family: "Roboto", sans-serif;
+    border-radius: 10px;
+    font-size: 17px;
+    color: #495057;
+    background-color: #1E1E1E;
+    text-decoration:none;
+    display: inline-flex;
+}
+
+li {
+    display: inline;
+}
+
+body {
+    background-color: darkgray;
+}
+main {
+    font-family: "Roboto", sans-serif;
+    font-size: large;
+    padding-top: 7%;
+    word-spacing: 2px;
+}
+
+.nav_menu{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #495057;
+}
+
+.clothing-item{
+    background-color: gray;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    height: max-content;
+    width: max-content;
+}
+.clothing-item:hover{
+    transform: translateY(-5px);
+}
+.item-info{
+    display: flex;
+}
+.image{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.merc{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+pre, .quote, .load_time {
+    background-color: #1E1E1E;
+    color: white;
+    width: max-content;
+    height: max-content;
+    box-shadow: 10px 5px 5px;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 10px;
+    word-spacing: 2px;
+}
+
+code {
+    font-family: "Play", sans-serif;
+}
+footer {
+    margin-top: 1%;
+    display: flex;
+    float: left;
+    position: relative;
+    top: 50px;
+}
+
+.socialNetwork_logo{
+    display: flex;
+    width: 5%;
+    height: 60%;
+    float: left;
+    left: 0;
+}
+#sizes {
+    font-family: "Roboto", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#sizes td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#sizes tr:nth-child(even){background-color: #f2f2f2;}
+
+#sizes tr:hover {background-color: #495057;}
+
+#sizes th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: gray;
+    color: white;
+}
+
+#discountForm, .table_section {
+    background-color: #1E1E1E;
+    width: max-content;
+    padding: 1%;
+    color: white;
+    border-radius: 10px;
+    margin: 2%;
+    box-shadow: 7px 3px 3px gray;
+}
+
+.table_section {
+    align-content: center;
+    display: block
+}
+
+.table_section th, .table_section td {
+    align-content: center;
+    border: 1px solid gray;
+    align-self: center;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.comment {
+    background-color: #1E1E1E;
+    width: 50%;
+    padding: 1%;
+    color: white;
+    border-radius: 10px;
+    margin: 1%;
+}
+
+.comment h4 {
+    color: gray;
+    padding: 1%;
+}
+
+@media screen and (max-width: 768px) {
+    .clothing-item{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 1921px) {
+    .clothing-item{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .table {
+        display: none;
+    }
+}
