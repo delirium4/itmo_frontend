@@ -230,6 +230,20 @@ footer {
     border-radius: 10px;
 }
 
+.comment {
+    background-color: #1E1E1E;
+    width: 50%;
+    padding: 1%;
+    color: white;
+    border-radius: 10px;
+    margin: 1%;
+}
+
+.comment h4 {
+    color: gray;
+    padding: 1%;
+}
+
 @media screen and (max-width: 768px) {
     .clothing-item{
         width: 100px;
